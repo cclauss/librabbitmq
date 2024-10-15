@@ -20,4 +20,5 @@ jobs:
         python-version: ${{ matrix.python-version }}
         # allow-prereleases: true
     - run: pip install --upgrade pip
+    - run: pip install --upgrade setuptools>=75.1.0
     - run: pip install ${{ matrix.module }}
